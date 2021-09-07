@@ -1,0 +1,43 @@
+{
+  "name": "backend-workspaces",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "workspaces": [
+    "api-server",
+    "auth-server"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start:api": "npm start --workspace=api-server",
+    "serve:api": "npm run serve --workspace=api-server",
+    "build:api": "npm run build --workspace=api-server",
+    "start:auth": "npm run start --workspace=auth-server",
+    "serve:auth": "npm run serve --workspace=auth-server",
+    "build:auth": "npm run serve --workspace=auth-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "esbuild": "^0.12.25",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "nodemon": "^2.0.12",
+    "standard": "^16.0.3"
+  }
+}
