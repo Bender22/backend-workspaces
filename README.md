@@ -1,2 +1,2 @@
 # backend-workspaces
-para aprender un poco de node js
+Para aprender un poco de nodejs
