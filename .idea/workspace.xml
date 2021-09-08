@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f517bbe-e03b-40ab-8b3f-098283ed3f91" name="Changes" comment="Cambie algo el README.md">
+      <change afterPath="$PROJECT_DIR$/auth-server/src/model/TokenDataModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/utils/invalidateTokens.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/utils/invalidateTokensInMemory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/middleware/loginMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/middleware/loginMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/router/loginRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/router/loginRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631017534531</updated>
       <workItem from="1631017535782" duration="2512000" />
-      <workItem from="1631068409321" duration="4942000" />
+      <workItem from="1631068409321" duration="25115000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie algo el README.md">
       <created>1631019011933</created>

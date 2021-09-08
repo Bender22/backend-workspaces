@@ -3,7 +3,7 @@ import express from 'express'
 import logger from 'morgan'
 import helmet from 'helmet'
 import loginRouter from './router/loginRouter.js'
-import errorsHandler from './middleware/errorsHandler.js'
+// import errorsHandler from './middleware/errorsHandler.js'
 
 const app = express()
 
@@ -12,5 +12,5 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use('/api', loginRouter)
-app.use(errorsHandler)
+// app.use(errorsHandler)
 export default app

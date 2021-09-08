@@ -2,31 +2,13 @@ import express from 'express'
 import * as bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import UserDataModel from '../model/UserDataModel.js'
+import { invalidate } from '../utils/invalidateTokens.js'
 import loginMiddleware from '../middleware/loginMiddleware.js'
 
 const router = express.Router()
 
-router.post('/login', loginMiddleware, async (req, res) => {
+router.post('/auth', loginMiddleware, async (req, res) => {
   console.log(req.body)
-  // let userData = {
-  //   username: '',
-  //   password: ''
-  //
-  // }
-  // if (grant_type === 'refresh_token') {
-  //   const { refresh_token } = req.body
-  //   const { decodedToken } = jwt.verify(refresh_token, process.env.SECRET_ACCESS)
-  //   console.log({ data: decodedToken })
-  //   userData = {
-  //     username: decodedToken.username
-  //   }
-  // } else if (grant_type === 'password') {
-  //   const { username, password } = req.body
-  //   userData = {
-  //     username,
-  //     password
-  //   }
-  // }
   const userData = req.userData
   const user = await UserDataModel.findOne({ username: userData.username })
   if (userData.grant_type === 'password') {
@@ -51,8 +33,8 @@ router.post('/login', loginMiddleware, async (req, res) => {
     id: user._id,
     name: user.name
   }
-  const accessTokenExpire = 60 * 15
-  const refreshTokenExpire = 60 * 60 * 24 * 7
+  const accessTokenExpire = 10
+  const refreshTokenExpire = 60
   const idTokenExpire = 60 * 60 * 10
 
   const access_token = jwt.sign(dataAccessToken, process.env.SECRET, {
@@ -72,6 +54,16 @@ router.post('/login', loginMiddleware, async (req, res) => {
     refresh_token_expires_in: refreshTokenExpire,
     id_token
   })
+})
+
+router.post('/logout', async (req, res) => {
+  const { refresh_token } = req.body
+  try {
+    const invalid = await invalidate(refresh_token)
+    res.send({ invalid })
+  } catch (e) {
+    res.send(e)
+  }
 })
 
 export default router
