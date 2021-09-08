@@ -6,7 +6,7 @@ y api-server con los siguientes valores:
 
 `PORT = Puerto del servidor`
 
-`SECRET = secret del acces token`
+`SECRET = secret del access token`
 
 `SECRET_ACCESS = sercret del reresh token`
 

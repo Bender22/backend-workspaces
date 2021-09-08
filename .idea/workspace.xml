@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f517bbe-e03b-40ab-8b3f-098283ed3f91" name="Changes" comment="Cambie algo el README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/src/middleware/errorsHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/middleware/errorsHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/src/router/noteRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/router/noteRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/router/loginRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/router/loginRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631017534531</updated>
       <workItem from="1631017535782" duration="2512000" />
-      <workItem from="1631068409321" duration="3907000" />
+      <workItem from="1631068409321" duration="4942000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie algo el README.md">
       <created>1631019011933</created>
