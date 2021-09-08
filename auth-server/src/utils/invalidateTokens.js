@@ -31,8 +31,7 @@ export const isTokenInvalid = async (refreshToken) => {
     username,
     date: new Date(exp * 1000)
   }
-  const result = await TokenDataModel.exists(toSearch)
-  return result
+  return await TokenDataModel.exists(toSearch)
 }
 
 export function deleteOutOfDateTokens () {
