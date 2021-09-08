@@ -13,7 +13,7 @@ const secret = {
 }
 
 router.get('/note', expressJwt(secret), (req, res) => {
-  console.log(req.user)
+  console.log(req.body)
   // let notes = {}
   // if (req.body.id) {
   //
@@ -36,15 +36,18 @@ router.get('/note', expressJwt(secret), (req, res) => {
   // }
 })
 
-router.get('/note/:id', async (req, res) => {
+router.get('/note/:id', (req, res) => {
   const id = req.params.id
 
-  const notes = await NoteDataModel.findById(id).populate('user', {
+  NoteDataModel.findById(id).populate('user', {
     username: 1,
     name: 1,
     date: 1
+  }).then(notes => {
+    res.status(200).json(notes)
+  }).catch(err => {
+    res.status(401).json(err)
   })
-  res.json(notes)
 })
 
 router.post('/note', expressJwt(secret), async (req, res) => {

@@ -5,9 +5,6 @@ import helmet from 'helmet'
 import loginRouter from './router/loginRouter.js'
 import errorsHandler from './middleware/errorsHandler.js'
 
-// mongo.catch(e => {
-//   console.log(e)
-// }).finally()
 const app = express()
 
 app.use(helmet())
