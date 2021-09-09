@@ -33,8 +33,8 @@ router.post('/auth', loginMiddleware, async (req, res) => {
     id: user._id,
     name: user.name
   }
-  const accessTokenExpire = 10
-  const refreshTokenExpire = 60
+  const accessTokenExpire = 60 * 15
+  const refreshTokenExpire = 60 * 60 * 24 * 10
   const idTokenExpire = 60 * 60 * 10
 
   const access_token = jwt.sign(dataAccessToken, process.env.SECRET, {

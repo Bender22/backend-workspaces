@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f517bbe-e03b-40ab-8b3f-098283ed3f91" name="Changes" comment="Cambie algo el README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/utils/invalidateTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/utils/invalidateTokens.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/router/loginRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/router/loginRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="C:\Users\Punky\Documents\WebstormProjects\backend-workspaces\node_modules\standard" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="standardjs.codestyle.accepted" value="true" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -82,7 +81,12 @@
       <option name="presentableId" value="Default" />
       <updated>1631017534531</updated>
       <workItem from="1631017535782" duration="2512000" />
-      <workItem from="1631068409321" duration="27699000" />
+      <workItem from="1631068409321" duration="28485000" />
+      <workItem from="1631108767554" duration="92000" />
+      <workItem from="1631108899861" duration="11000" />
+      <workItem from="1631108947638" duration="22000" />
+      <workItem from="1631167936490" duration="1889000" />
+      <workItem from="1631170228514" duration="366000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie algo el README.md">
       <created>1631019011933</created>
