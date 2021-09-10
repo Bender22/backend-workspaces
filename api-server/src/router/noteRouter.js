@@ -92,4 +92,15 @@ router.put('/note', (req, res) => {
     })
 })
 
+router.delete('/note', (req, res) => {
+  const { id } = req.body
+  NoteDataModel.deleteOne({ _id: id }).then((result) => {
+    console.log('Elemento borrado')
+    res.send('Se borró la Nota')
+  }).catch(err => {
+    console.log(err)
+    res.send(err)
+  })
+})
+
 export default router
