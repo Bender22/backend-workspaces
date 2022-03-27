@@ -1,5 +1,9 @@
-# backend-workspaces
-Para aprender un poco de nodejs.
+# Backend-Workspaces
+Es un servidor nodejs para tener lo que poco a poco voy aprendiendo.
+
+
+servidor de autenticacion de prueva pensado en auth 2 con el flujo 
+password credential 
 
 Descargar el proyecto y crear un archivo .env en las carpeta auth-server 
 y api-server con los siguientes valores:
